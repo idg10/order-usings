@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_WITHIN_SINGLE_LINE_ARRAY_INITIALIZER_BRACES/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CSharpUsing/AddImportsToDeepestScope/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CSharpUsing/QualifiedUsingAtNestedScope/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateBlankLinesAroundFieldToBlankLinesAroundProperty/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/OrderUsings/OrderSpecificationXml/@EntryValue">&lt;?xml version="1.0" encoding="utf-8" ?&gt;&#xD;
+&lt;Groups&#xD;
+  xmlns="http://schemas.interact-sw.co.uk/OrderUsings/2014"&#xD;
+  &gt;&#xD;
+  &lt;Group Priority="1" NamespacePattern="System*" /&gt;&#xD;
+  &lt;Group Priority="1" NamespacePattern="Microsoft*" /&gt;&#xD;
+  &lt;Space /&gt;&#xD;
+  &lt;Group Priority="1" NamespacePattern="NUnit*" /&gt;&#xD;
+  &lt;Space /&gt;&#xD;
+  &lt;Group Priority="1" NamespacePattern="JetBrains*" /&gt;&#xD;
+  &lt;Space /&gt;&#xD;
+  &lt;Group Priority="9999" NamespacePattern="*" /&gt;&#xD;
+  &lt;Space /&gt;&#xD;
+  &lt;Group Priority="9999" NamespacePattern="*" AliasPattern="*" Type="Alias" /&gt;&#xD;
+  &lt;Space /&gt;&#xD;
+  &lt;Group Priority="1" NamespacePattern="OrderUsings*" /&gt;&#xD;
+&lt;/Groups&gt;</s:String></wpf:ResourceDictionary>

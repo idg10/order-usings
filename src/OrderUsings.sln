@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper810", "ReSharper810\ReSharper810.csproj", "{D1291D67-AD57-4982-827B-0BEDD4B1C140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper810.Tests", "Resharper810.Tests\Resharper810.Tests.csproj", "{372D6B66-6022-4656-AB50-4CBCADD09150}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1E2CF5ED-1599-4D40-A4BD-8F773A6D90DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{6D1823DC-EDB3-4423-88BF-0AB678000E68}"
+	ProjectSection(SolutionItems) = preProject
+		test\data\highlighting-order-01.cs = test\data\highlighting-order-01.cs
+		test\data\highlighting-order-01.cs.gold = test\data\highlighting-order-01.cs.gold
+		test\data\highlighting-spacing-01.cs = test\data\highlighting-spacing-01.cs
+		test\data\highlighting-spacing-01.cs.gold = test\data\highlighting-spacing-01.cs.gold
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderUsings.Core", "OrderUsings.Core\OrderUsings.Core.csproj", "{9875DA0A-DB09-47B2-80B5-80B08E430CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderUsings.Core.Tests", "OrderUsings.Core.Tests\OrderUsings.Core.Tests.csproj", "{638CD37F-59CB-42AE-873D-5E09E9C32EAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{00A0C928-006D-41E5-AF17-F018C79A9430}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1291D67-AD57-4982-827B-0BEDD4B1C140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1291D67-AD57-4982-827B-0BEDD4B1C140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1291D67-AD57-4982-827B-0BEDD4B1C140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1291D67-AD57-4982-827B-0BEDD4B1C140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372D6B66-6022-4656-AB50-4CBCADD09150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372D6B66-6022-4656-AB50-4CBCADD09150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372D6B66-6022-4656-AB50-4CBCADD09150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372D6B66-6022-4656-AB50-4CBCADD09150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9875DA0A-DB09-47B2-80B5-80B08E430CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9875DA0A-DB09-47B2-80B5-80B08E430CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9875DA0A-DB09-47B2-80B5-80B08E430CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9875DA0A-DB09-47B2-80B5-80B08E430CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{638CD37F-59CB-42AE-873D-5E09E9C32EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{638CD37F-59CB-42AE-873D-5E09E9C32EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{638CD37F-59CB-42AE-873D-5E09E9C32EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{638CD37F-59CB-42AE-873D-5E09E9C32EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D1823DC-EDB3-4423-88BF-0AB678000E68} = {1E2CF5ED-1599-4D40-A4BD-8F773A6D90DE}
+	EndGlobalSection
+EndGlobal

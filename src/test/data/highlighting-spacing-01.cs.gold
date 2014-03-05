@@ -1,0 +1,16 @@
+|using System;
+
+using System.Collections.Generic;|(0)
+
+namespace Test
+{
+    public class Foo
+    {
+        public virtual bool Bar(List<String> data)
+        {
+            return data.Count > 0;
+        }
+    }
+}
+---------------------------------------------------------
+(0): ReSharper Warning: Using directives do not match configured spacing

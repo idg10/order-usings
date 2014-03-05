@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Group elements match just ordinary using declarations by default - they have a Type of Import.
+A Group with Type="Alias" will match only alias directives (using Foo = Something.Foo;).
+Use Type="ImportOrAlias" to match both kinds of using directive.
+When a single group matches both kinds of using directive, aliases will be sorted based on the name
+of the alias by default, e.g.:
+
+using A;
+using B = D;
+using C;
+using F;
+
+You can set AliasOrderKey="Namespace" on a group with Type="ImportOrAlias" to sort alias directives
+by the namespace, e.g. the same directives as shown above would, if all matched by a rule configured
+this way, be sorted as:
+
+using A;
+using C;
+using B = D;
+using F;
+
+-->
+<Groups xmlns="http://schemas.interact-sw.co.uk/OrderUsings/2014">
+  <Group Priority="1" NamespacePattern="System*" />
+  <Group Priority="1" NamespacePattern="Microsoft*" />
+  <Space />
+  <Group Priority="9999" NamespacePattern="*" />
+  <Space />
+  <Group Priority="9999" NamespacePattern="*" AliasPattern="*" Type="Alias" />
+</Groups>
