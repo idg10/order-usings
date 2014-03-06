@@ -9,7 +9,7 @@
     <description>Enables configurable fine control over the ordering, grouping, and spacing of C# using directives. Instead of being limited to two groups - System*, and everything else - you can define any number of groups in any order to arrange using directives however makes most sense for your project.</description>
     <summary>Control over the ordering, grouping, and spacing of C# using directives.</summary>
     <copyright>Copyright &#x00A9; 2014 Ian Griffiths</copyright>
-    <releaseNotes>&#x2022; 1.0.1 - Added code ReSharper cleanup support
+    <releaseNotes>&#x2022; 1.1.0 - Added code ReSharper cleanup support
 &#x2022; 1.0.0 - First release (supporting only ReSharper 8.1)</releaseNotes>
     <projectUrl>https://github.com/idg10/order-usings</projectUrl>
     <licenseUrl>https://github.com/idg10/order-usings/blob/master/LICENSE</licenseUrl>
