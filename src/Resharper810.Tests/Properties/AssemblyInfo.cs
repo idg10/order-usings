@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 using NUnit.Framework;
 
@@ -7,8 +8,21 @@ using JetBrains.Application;
 using JetBrains.Threading;
 
 using OrderUsings.Configuration;
-using OrderUsings.ReSharper;
 using OrderUsings.ReSharper.Settings;
+
+[assembly: AssemblyTitle("OrderUsings.ReSharper810.Tests")]
+[assembly: AssemblyDescription("Tests for ReSharper v8.1 Order Usings plug-in")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Ian Griffiths")]
+[assembly: AssemblyProduct("Order Usings")]
+[assembly: AssemblyCopyright("Copyright © Ian Griffiths, 2014")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: ComVisible(false)]
 
 /// <summary>
 /// Test environment. Must be in the global namespace.

@@ -10,7 +10,6 @@ namespace Resharper810.Tests.Highlighting
     using JetBrains.ReSharper.Daemon.CSharp;
     using JetBrains.ReSharper.TestFramework;
 
-    using OrderUsings.ReSharper;
     using OrderUsings.ReSharper.Highlightings;
     using OrderUsings.ReSharper.Settings;
 
@@ -51,7 +50,7 @@ namespace Resharper810.Tests.Highlighting
 
         protected override string RelativeTestDataPath
         {
-            get { return @""; }
+            get { return string.Empty; }
         }
 
         [Test]

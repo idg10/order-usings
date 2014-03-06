@@ -53,6 +53,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeCleanup\OrderAndSpaceCleanupDescriptor.cs" />
+    <Compile Include="CodeCleanup\OrderAndSpacingCodeCleanupModule.cs" />
+    <Compile Include="Fixes.cs" />
     <Compile Include="Highlightings\BaseHighlighting.cs" />
     <Compile Include="CodeModel\ImportReader.cs" />
     <Compile Include="Inspection\OrderUsingsDaemonStage.cs" />

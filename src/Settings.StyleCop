@@ -1,6 +1,9 @@
 <StyleCopSettings Version="105">
   <GlobalSettings>
     <StringProperty Name="Culture">en-GB</StringProperty>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>cleanup</Value>
+    </CollectionProperty>
   </GlobalSettings>
   <Analyzers>
     <Analyzer AnalyzerId="StyleCop.CSharp.NamingRules">

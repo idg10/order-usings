@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1E2CF5ED-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{6D1823DC-EDB3-4423-88BF-0AB678000E68}"
 	ProjectSection(SolutionItems) = preProject
+		test\data\cleanup-order-01.cs = test\data\cleanup-order-01.cs
+		test\data\cleanup-order-01.cs.gold = test\data\cleanup-order-01.cs.gold
 		test\data\highlighting-order-01.cs = test\data\highlighting-order-01.cs
 		test\data\highlighting-order-01.cs.gold = test\data\highlighting-order-01.cs.gold
 		test\data\highlighting-spacing-01.cs = test\data\highlighting-spacing-01.cs

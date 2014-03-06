@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 using JetBrains.Application.PluginSupport;
 
@@ -14,6 +15,8 @@ using JetBrains.Application.PluginSupport;
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: ComVisible(false)]
 
 // The following information is displayed by ReSharper in the Plugins dialog
 [assembly: PluginTitle("Order Usings")]
