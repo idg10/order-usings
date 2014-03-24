@@ -38,15 +38,55 @@
                 throw new ArgumentNullException("directives");
             }
 
-            Dictionary<GroupRule, Regex> groupNamespaceMatchers = configuration.GroupsAndSpaces
+            Dictionary<GroupRule, Predicate<UsingDirective>> groupNamespaceMatchers = configuration.GroupsAndSpaces
                 .Where(gs => !gs.IsSpace)
-                .ToDictionary(
+                .ToDictionary<ConfigurationRule, GroupRule, Predicate<UsingDirective>>(
                     gs => gs.Rule,
-                    gs => new Regex(gs.Rule.NamespacePattern.Replace(".", "\\.").Replace("*", ".*")));
+                    gs =>
+                    {
+                        Regex nsRegex = null;
+                        Regex aliasRegex = null;
+                        MatchType matchType = gs.Rule.Type;
+                        switch (matchType)
+                        {
+                            case MatchType.Import:
+                                nsRegex = RegexForPattern(gs.Rule.NamespacePattern);
+                                break;
+
+                            case MatchType.Alias:
+                                aliasRegex = RegexForPattern(gs.Rule.AliasPattern);
+                                break;
+
+                            case MatchType.ImportOrAlias:
+                                nsRegex = RegexForPattern(gs.Rule.NamespacePattern);
+                                aliasRegex = RegexForPattern(gs.Rule.AliasPattern);
+                                break;
+                            default:
+                                throw new ArgumentOutOfRangeException();
+                        }
+
+                        return directive =>
+                        {
+                            bool hasAlias = directive.Alias != null;
+                            if (matchType == MatchType.Alias && !hasAlias)
+                            {
+                                return false;
+                            }
+
+                            if (matchType == MatchType.Import && hasAlias)
+                            {
+                                return false;
+                            }
+
+                            return
+                                (nsRegex == null || nsRegex.IsMatch(directive.Namespace)) &&
+                                (aliasRegex == null || !hasAlias || aliasRegex.IsMatch(directive.Alias));
+                        };
+                    });
 
             ILookup<GroupRule, UsingDirective> directivesByGroup = directives.ToLookup(
                 d => groupNamespaceMatchers
-                    .Where(e => e.Value.IsMatch(d.Namespace))
+                    .Where(e => e.Value(d))
                     .OrderBy(e => e.Key.Priority)
                     .First().Key);
 
@@ -76,6 +116,11 @@
             MakeGroupFromCurrentItemsIfAny(ref currentItemSet, lastRule, results);
 
             return results;
+        }
+
+        private static Regex RegexForPattern(string pattern)
+        {
+            return new Regex(pattern.Replace(".", "\\.").Replace("*", ".*"));
         }
 
         private static void MakeGroupFromCurrentItemsIfAny(

@@ -10,7 +10,7 @@
             Verify(
                 new[]
                 {
-                    AliasSystemPathAsPath,
+                    AliasSystemIoPathAsPath,
                     ImportSystem,
                     ImportRuhroh,
                     AliasSystemLaterAsEarlier
@@ -20,7 +20,7 @@
                     new[]
                     {
                         AliasSystemLaterAsEarlier,
-                        AliasSystemPathAsPath,
+                        AliasSystemIoPathAsPath,
                         ImportRuhroh,
                         ImportSystem
                     }

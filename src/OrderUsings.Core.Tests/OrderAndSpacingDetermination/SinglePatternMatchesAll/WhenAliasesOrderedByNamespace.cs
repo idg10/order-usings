@@ -21,7 +21,7 @@
             Verify(
                 new[]
                 {
-                    AliasSystemPathAsPath,
+                    AliasSystemIoPathAsPath,
                     ImportSystem,
                     ImportRuhroh,
                     AliasSystemLaterAsEarlier
@@ -32,7 +32,7 @@
                     {
                         ImportRuhroh,
                         ImportSystem,
-                        AliasSystemPathAsPath,
+                        AliasSystemIoPathAsPath,
                         AliasSystemLaterAsEarlier
                     }
                 });

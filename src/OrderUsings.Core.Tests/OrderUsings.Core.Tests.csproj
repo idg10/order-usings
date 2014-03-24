@@ -51,6 +51,9 @@
     <Compile Include="OrderAndSpacingDetermination\SinglePatternMatchesAll\WhenNoUsings.cs" />
     <Compile Include="OrderAndSpacingDetermination\SinglePatternMatchesAll\WhenOneImport.cs" />
     <Compile Include="OrderAndSpacingDetermination\SinglePatternMatchesAll\WhenThreeImports.cs" />
+    <Compile Include="OrderAndSpacingDetermination\SpecificThenFallbackThenSpecificThenAliases\SpecificThenFallbackThenSpecificThenAliasesBase.cs" />
+    <Compile Include="OrderAndSpacingDetermination\SpecificThenFallbackThenSpecificThenAliases\WhenSpecificAndAliasGroupsPopulated.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\TwoGroupsThenAliasesBase.cs" />
     <Compile Include="OrderAndSpacingDetermination\TwoSpecificAdjacentPatternsWithoutSpaceThenFallback\TwoSpecificAdjacentPatternsWithoutSpaceThenFallbackBase.cs" />
     <Compile Include="OrderAndSpacingDetermination\TwoSpecificAdjacentPatternsWithoutSpaceThenFallback\WhenNoUsings.cs" />
     <Compile Include="OrderAndSpacingDetermination\TwoSpecificAdjacentPatternsWithoutSpaceThenFallback\WhenOneImport.cs" />
@@ -60,6 +63,15 @@
     <Compile Include="OrderAndSpacingDetermination\TwoSpecificPatternsWithFallbackInMiddleAllSpaced\WhenOneImport.cs" />
     <Compile Include="OrderAndSpacingDetermination\TwoSpecificPatternsWithFallbackInMiddleAllSpaced\WhenThreeImports.cs" />
     <Compile Include="OrderAndSpacingDetermination\TwoSpecificPatternsWithFallbackInMiddleAllSpaced\WhenTwoUsings.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenAliasesAndImportsOrderedByNamespace.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenAliasesAndImportsOrderedByAlias.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenImportsAndAliasesMatchingAllGroups.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenNoUsings.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenOneAlias.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenOneImport.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenThreeAliasesOrderedByNamespace.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenThreeAliasesOrderedByAlias.cs" />
+    <Compile Include="OrderAndSpacingDetermination\TwoSpecificThenDefaultThenAliases\WhenThreeImports.cs" />
     <Compile Include="OrderChecking\WhenListsDifferent.cs" />
     <Compile Include="OrderChecking\WhenListsEmpty.cs" />
     <Compile Include="OrderChecking\WhenListsIdentical.cs" />

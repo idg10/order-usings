@@ -10,13 +10,18 @@
 
     public abstract class OrderAndSpacingDeterminationTestBase
     {
-        internal static readonly UsingDirective AliasSystemPathAsPath = new UsingDirective { Namespace = "System.IO.Path", Alias = "Path" };
+        internal static readonly UsingDirective AliasSystemIoPathAsPath = new UsingDirective { Namespace = "System.IO.Path", Alias = "Path" };
         internal static readonly UsingDirective AliasSystemLaterAsEarlier = new UsingDirective { Namespace = "System.Later", Alias = "Earlier" };
         internal static readonly UsingDirective AliasSystemTextAsSystem = new UsingDirective { Namespace = "System.Text", Alias = "System" };
+        internal static readonly UsingDirective AliasSystemAbcAsXyz = new UsingDirective { Namespace = "System.Abc", Alias = "Xyz" };
+        internal static readonly UsingDirective AliasMicrosoftOfficeInteropPowerPointAsPowerPoint = new UsingDirective { Namespace = "Microsoft.Office.Interop.PowerPoint", Alias = "PowerPoint" };
 
         internal static readonly UsingDirective ImportSystem = new UsingDirective { Namespace = "System" };
         internal static readonly UsingDirective ImportSystemCollectionsGeneric = new UsingDirective { Namespace = "System.Collections.Generic" };
         internal static readonly UsingDirective ImportSystemLinq = new UsingDirective { Namespace = "System.Linq" };
+        internal static readonly UsingDirective ImportSystemData = new UsingDirective { Namespace = "System.Data" };
+        internal static readonly UsingDirective ImportSystemRuntimeInteropServices = new UsingDirective { Namespace = "System.Runtime.InteropServices" };
+        internal static readonly UsingDirective ImportSystemWindowsForms = new UsingDirective { Namespace = "System.Windows.Forms" };
 
         internal static readonly UsingDirective ImportMicrosoftCSharp = new UsingDirective { Namespace = "Microsoft.CSharp" };
 
@@ -27,6 +32,8 @@
         internal static readonly UsingDirective ImportMyLocal = new UsingDirective { Namespace = "MyLocal" };
         internal static readonly UsingDirective ImportMyLocalA = new UsingDirective { Namespace = "MyLocal.A" };
         internal static readonly UsingDirective ImportMyLocalB = new UsingDirective { Namespace = "MyLocal.B" };
+
+        internal static readonly UsingDirective ImportMmCorePpt = new UsingDirective { Namespace = "Mm.Core.Ppt" };
 
         internal static readonly UsingDirective ImportRuhroh = new UsingDirective { Namespace = "Ruhroh" };
 
