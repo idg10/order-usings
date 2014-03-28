@@ -1,4 +1,4 @@
-namespace Resharper810.Tests.CodeCleanup
+namespace Resharper.Tests.CodeCleanup
 {
     using NUnit.Framework;
 

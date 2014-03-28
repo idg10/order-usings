@@ -13,7 +13,7 @@
     <ProjectGuid>{372D6B66-6022-4656-AB50-4CBCADD09150}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Resharper810.Tests</RootNamespace>
+    <RootNamespace>Resharper.Tests</RootNamespace>
     <AssemblyName>Resharper810.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

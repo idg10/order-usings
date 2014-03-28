@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{00A0C9
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper820", "ReSharper820\ReSharper820.csproj", "{0EFF7BD1-E944-4CFD-BBF4-91563372BCAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper820.Tests", "ReSharper820.Tests\ReSharper820.Tests.csproj", "{396DEB61-5CC3-48C8-8877-1E344C564E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,14 @@ Global
 		{638CD37F-59CB-42AE-873D-5E09E9C32EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{638CD37F-59CB-42AE-873D-5E09E9C32EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{638CD37F-59CB-42AE-873D-5E09E9C32EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EFF7BD1-E944-4CFD-BBF4-91563372BCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EFF7BD1-E944-4CFD-BBF4-91563372BCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EFF7BD1-E944-4CFD-BBF4-91563372BCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EFF7BD1-E944-4CFD-BBF4-91563372BCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396DEB61-5CC3-48C8-8877-1E344C564E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396DEB61-5CC3-48C8-8877-1E344C564E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396DEB61-5CC3-48C8-8877-1E344C564E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396DEB61-5CC3-48C8-8877-1E344C564E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

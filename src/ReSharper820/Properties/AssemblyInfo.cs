@@ -1,10 +1,9 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-
+using JetBrains.ActionManagement;
 using JetBrains.Application.PluginSupport;
 
-[assembly: AssemblyTitle("OrderUsings.ReSharper810")]
+[assembly: AssemblyTitle("ReSharper820")]
 [assembly: AssemblyDescription("Rules-based ordering for C# using directives")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ian Griffiths")]
@@ -16,11 +15,11 @@ using JetBrains.Application.PluginSupport;
 [assembly: AssemblyVersion("1.2.0.0")]
 [assembly: AssemblyFileVersion("1.2.0.0")]
 
-[assembly: ComVisible(false)]
+[assembly: ActionsXml("ReSharper820.Actions.xml")]
 
 // The following information is displayed by ReSharper in the Plugins dialog
 [assembly: PluginTitle("Order Usings")]
 [assembly: PluginDescription("Rules-based ordering for C# using directives")]
 [assembly: PluginVendor("Ian Griffiths")]
 
-[assembly: InternalsVisibleTo("ReSharper810.Tests")]
+[assembly: InternalsVisibleTo("ReSharper820.Tests")]

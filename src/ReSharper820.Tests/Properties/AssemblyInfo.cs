@@ -35,9 +35,6 @@ public class TestEnvironmentAssembly : ReSharperTestEnvironmentAssembly
     /// Gets the assemblies to load into test environment.
     /// Should include all assemblies which contain components.
     /// </summary>
-    /// <returns>
-    /// The assemblies to load.
-    /// </returns>
     private static IEnumerable<Assembly> GetAssembliesToLoad()
     {
         // Test assembly
@@ -51,17 +48,17 @@ public class TestEnvironmentAssembly : ReSharperTestEnvironmentAssembly
     {
         base.SetUp();
         ReentrancyGuard.Current.Execute(
-            "LoadAssemblies",
-            () => Shell.Instance.GetComponent<AssemblyManager>().LoadAssemblies(
-                GetType().Name, GetAssembliesToLoad()));
+          "LoadAssemblies",
+          () => Shell.Instance.GetComponent<AssemblyManager>().LoadAssemblies(
+            GetType().Name, GetAssembliesToLoad()));
     }
 
     public override void TearDown()
     {
         ReentrancyGuard.Current.Execute(
-            "UnloadAssemblies",
-            () => Shell.Instance.GetComponent<AssemblyManager>().UnloadAssemblies(
-                GetType().Name, GetAssembliesToLoad()));
+          "UnloadAssemblies",
+          () => Shell.Instance.GetComponent<AssemblyManager>().UnloadAssemblies(
+            GetType().Name, GetAssembliesToLoad()));
         base.TearDown();
     }
 }

@@ -9,14 +9,15 @@
     <description>Enables configurable fine control over the ordering, grouping, and spacing of C# using directives. Instead of being limited to two groups - System*, and everything else - you can define any number of groups in any order to arrange using directives however makes most sense for your project.</description>
     <summary>Control over the ordering, grouping, and spacing of C# using directives.</summary>
     <copyright>Copyright &#x00A9; 2014 Ian Griffiths</copyright>
-    <releaseNotes>&#x2022; 1.1.1 - Fixed alias handling bug
+    <releaseNotes>&#x2022; 1.2.0 - Added ReSharper 8.2 supprt
+&#x2022; 1.1.1 - Fixed alias handling bug
 &#x2022; 1.1.0 - Added ReSharper code cleanup support
 &#x2022; 1.0.0 - First release (supporting only ReSharper 8.1)</releaseNotes>
     <projectUrl>https://github.com/idg10/order-usings</projectUrl>
     <licenseUrl>https://github.com/idg10/order-usings/blob/master/LICENSE</licenseUrl>
     <iconUrl>http://b.interact-sw.co.uk/images/OrderUsingIcon.png</iconUrl>
     <dependencies>
-      <dependency id="ReSharper" version="[8.1, 8.2)" />
+      <dependency id="ReSharper" version="[8.1, 8.3)" />
     </dependencies>
   </metadata>
   <files>
@@ -24,5 +25,9 @@
           target="ReSharper\v8.1\plugins" />
     <file src="..\src\OrderUsings.Core\bin\Release\OrderUsings.Core.dll"
           target="ReSharper\v8.1\plugins" />
+    <file src="..\src\ReSharper810\bin\Release\OrderUsings.ReSharper820.dll"
+          target="ReSharper\v8.2\plugins" />
+    <file src="..\src\OrderUsings.Core\bin\Release\OrderUsings.Core.dll"
+          target="ReSharper\v8.2\plugins" />
   </files>
 </package>

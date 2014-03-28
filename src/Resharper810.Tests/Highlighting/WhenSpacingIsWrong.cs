@@ -1,4 +1,4 @@
-namespace Resharper810.Tests.Highlighting
+namespace Resharper.Tests.Highlighting
 {
     using System;
 
