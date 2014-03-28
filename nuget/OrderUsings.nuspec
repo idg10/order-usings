@@ -3,7 +3,7 @@
   <metadata>
     <id>OrderUsings</id>
     <title>Ordering and Spacing for using directives</title>
-    <version>1.1.1</version>
+    <version>1.2.0-beta1</version>
     <authors>Ian Griffiths</authors>
     <owners>Ian Griffiths</owners>
     <description>Enables configurable fine control over the ordering, grouping, and spacing of C# using directives. Instead of being limited to two groups - System*, and everything else - you can define any number of groups in any order to arrange using directives however makes most sense for your project.</description>
